@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a class="logo" href="home.html">
+                    <h1 class="logo__nombre centrar-texto">Veterinary<span class="logo__bold">Company</span></h1>
+                </a>
+                <div class="derecha">
+                    <nav class="navegacion">
+                        <a href="home.html" class="navegacion-enlace">Pagina Principal</a>
+                        <a href="servicio.html" class="navegacion-enlace">Servicios</a>
+                        <a href="contacto.html" class="navegacion-enlace">Contacto</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="header__text">
+            <h2>PRIMERO QUISE SER 
+              <br>VETERINARIO</h2>
+            
+        </div>
+    </header>
+    <section id="servicio" class="servicio">
+        <div class="contenedor contenido-principal">
+            
+            <h3>Nuestros Productos</h3>
+            <div class="grid">
+                
+                <div class="servicio">
+                    
+                        <img src="productos/puff2.jpg" alt="imagen entrada" width="700" height="300">               
+                        <div class="item servicio-informacion">
+                            <p class="servicio__nombre item-title">Puff Anti Stress</p>
+                            <p class="servicio__precio item-price">$2500</p>
+                            
+                            <button type="button" class="boton--secundario addToCart">COMPRAR AHORA</button>
+                        </div>
+                </div>
+                <div class="servicio">
+
+                        <img src="productos/cama.jpg" alt="imagen entrada" width="700" height="300">             
+                        <div class="item servicio-informacion">
+                            <p class="servicio__nombre item-title">Colchoneta </p>
+                            <p class="servicio__precio item-price">$4000</p>
+                            <button type="button" class="boton--secundario addToCart">COMPRAR AHORA</button>
+                        </div>
+                    </div>
+                
+                <div class="servicio">   
+                   
+                        <img src="productos/manta.png" alt="imagen entrada" width="700" height="300">            
+                        <div class="item servicio-informacion">
+                            <p class="servicio__nombre item-title">Manta Puppis</p>
+                            <p class="servicio__precio item-price">$2000</p>
+                            <button type="button" class="boton--secundario addToCart">COMPRAR AHORA</button>
+                        </div>
+                    
+                </div>
+                <div class="servicio">   
+                    
+                        <img src="productos/pretal.jpg" alt="imagen entrada" width="700" height="300">
+                        <div class="item servicio-informacion">
+                            <p class="servicio__nombre item-title">Pretal Husky</p>
+                            <p class="servicio__precio item-price">$2600</p>
+                            <button type="button" class="boton--secundario addToCart">COMPRAR AHORA</button>
+                        </div>
+                        
+                    
+                </div>
+                <div class="servicio">   
+                   
+                        <img src="productos/correa.jpg" alt="imagen entrada" width="700" height="300">
+                        <div class="item servicio-informacion">
+                            <p class="servicio__nombre item-title">Correa Husky</p>
+                            <p class="servicio__precio item-price">$1850</p>
+                            <button type="button" class="boton--secundario addToCart">COMPRAR AHORA</button>
+                        </div>
+                        
+        
+                </div>
+                <div class="servicio">   
+                        <img src="productos/collar.jpg" alt="imagen entrada" width="700" height="300">
+                        <div class="item servicio-informacion">
+                            <p class="servicio__nombre item-title">Collar Husky</p>
+                            <p class="servicio__precio item-price">$1350</p>
+                            <button type="button" class="boton--secundario addToCart">COMPRAR AHORA</button>
+                        </div>
+                        
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <section class="shopping-cart servicio">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- ? START SHOPPING CART ITEMS -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+            <!-- ? END SHOPPING CART ITEMS -->
+
+            <!-- START TOTAL -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">0$</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="boton--secundario btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- END TOTAL -->
+
+            <!-- START MODAL COMPRA -->
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END MODAL COMPRA -->
+
+
+        </div>
+        <footer class="footer seccion"> 
+            <div class="contenedor contenedor--footer">
+                <nav class="navegacion">
+                    <a href="home.html">Pagina Principal</a>
+                </nav>
+            </div>
+            <p class="copyright">Todos los derechos reservados 2021 &copy;</p>
+        </footer>
+    </section>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
